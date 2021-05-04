@@ -58,7 +58,7 @@ public class cacrculator {
 	
 	public static void Div(int x, int y) {
 		System.out.println("A / B = "+(x/y));
-	}
+	}//kkk
 }
 
 
