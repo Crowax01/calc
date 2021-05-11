@@ -15,6 +15,12 @@ public class cacrculator {
 		System.out.println("2. -");
 		System.out.println("3. *");
 		System.out.println("4. /");
+		
+		//새로만든부분
+		System.out.println("5. 세제곱");
+		System.out.println("6. 펙토리얼");
+		System.out.println("7. 루트");
+		System.out.println("8. 절대값");
 		System.out.println("========================");
 		
 		// 사용자 입력
@@ -37,6 +43,18 @@ public class cacrculator {
 		case 4:
 			Div(a,b);
 			break;
+		case 5:
+			threegob(a,b);
+			break;
+		case 6:
+			fac(a,b);
+			break;
+		case 7:
+			root(a);
+			break;
+		case 8:
+			abs(a);
+			break;
 		}
 		System.out.println("프로그램이 종료되었습니다.");
 	}
@@ -58,7 +76,34 @@ public class cacrculator {
 	
 	public static void Div(int x, int y) {
 		System.out.println("A / B = "+(x/y));
-	}//kkk
+	}
+	
+	public static void threegob(int x, int y) {
+		System.out.println("A ^ 3 = "+(x*x*x));
+	}
+	
+	public static void fac(int x, int y) {
+		int fac=1;
+		 for (int i = x; i >= 1; i--) {
+	            fac = fac * i;
+	         // 핵심은 위 for문과 초기값 설정 
+	        }
+	        System.out.println(x + "!은 " + fac);
+	}
+	
+	public static void root(double x)
+	{
+		System.out.printf("%.3f", Math.sqrt(x));
+	}
+	
+	public static void abs(double a)
+	{
+		if(a>=0)
+			System.out.println("|A| = "+a);
+		else
+			System.out.println("|A| = "+-a);
+
+	}
 }
 
 
