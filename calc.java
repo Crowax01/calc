@@ -21,6 +21,7 @@ public class cacrculator {
 		System.out.println("6. 펙토리얼");
 		System.out.println("7. 루트");
 		System.out.println("8. 절대값");
+		System.out.println("9. 시그마");
 		System.out.println("========================");
 		
 		// 사용자 입력
@@ -54,6 +55,9 @@ public class cacrculator {
 			break;
 		case 8:
 			abs(a);
+			break;
+		case 9:
+			sigma(a,b);
 			break;
 		}
 		System.out.println("프로그램이 종료되었습니다.");
@@ -104,6 +108,19 @@ public class cacrculator {
 			System.out.println("|A| = "+-a);
 
 	}
+	
+	public static void sigma(int x, int y) 
+	{
+		int sum = 0;
+		for(int i=x; i<y+1; i++)
+		{
+		    sum += i;
+		}
+	       System.out.println(y);
+	       System.out.println("Σ   = "+ sum);
+	       System.out.println("x="+x);
+	}
+
 }
 
 
